@@ -1,10 +1,12 @@
+body{
+    display: flex;
+}
+
 .header{
-    background: #FCFCFC;
-    background: -moz-linear-gradient(left, #FCFCFC 0%, #000000 100%);
-    background: -webkit-linear-gradient(left, #FCFCFC 0%, #000000 100%);
-    background: linear-gradient(to right, #FCFCFC 0%, #000000 100%);
-    height: 108px;
-    opacity: 0.8;
+    background: #000000;
+    background: -moz-linear-gradient(top, #000000 0%, #FFFFFF 100%);
+    background: -webkit-linear-gradient(top, #000000 0%, #FFFFFF 100%);
+    background: linear-gradient(to bottom, #000000 0%, #FFFFFF 100%);    opacity: 0.8;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -37,17 +39,21 @@ ul.menu{
     padding: 0;
 }
 
-li a {
+
+li a{
     display: block;
-    line-height: 50px;
-    width: 50px;
-    height: 50px;
+    float: left;
+    font-family: Arial;
+    font-size: 25px;
+    line-height: 100px;
+    width: 33.33%;
+    height: 100px;
     text-align: center;
     vertical-align: middle;
 
 }
 
 li a:hover {
-  background-color: blue;
+  background-color: black;
   color: white;
 }
