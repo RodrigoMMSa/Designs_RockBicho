@@ -1,35 +1,41 @@
 body{
-    display: flex;
+    position: relative;
+    background: #eeeeee;
+    margin:0;
+    padding:0;
+    height:100%;
 }
 
-.header{
-    background: #000000;
-    background: -moz-linear-gradient(top, #000000 0%, #FFFFFF 100%);
-    background: -webkit-linear-gradient(top, #000000 0%, #FFFFFF 100%);
-    background: linear-gradient(to bottom, #000000 0%, #FFFFFF 100%);    opacity: 0.8;
+div.header{
+    position: absolute;
+    top: 0;
+    background: -moz-linear-gradient(top, #000000 0%, #eeeeee 100%);
+    background: -webkit-linear-gradient(top, #000000 0%, #eeeeee 100%);
+    background: linear-gradient(to bottom, #000000 0%, #eeeeee 100%);
+    opacity: 0.8;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-
+    padding: 140px;
 }
+
 h1.title{
-    display: block;
-    line-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Georgia;
     font-size: 35px;
     color: white;
     text-align: center;
     text-shadow: 5px 1px 3px rgba(0,0,0,0.7);
-    height: 100px;
+    height: 55px;
 }
 
 
 h1.title a:hover{
     content: url(../media/rockbicho_face.png); /* no need for qoutes */
-    display: inline-block;
     vertical-align: middle;
     width: 100px;
-    height: 100px;
 }
 
 ul.menu{
@@ -40,18 +46,45 @@ ul.menu{
 
 
 li a{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     float: left;
-    font-family: Arial;
-    font-size: 25px;
-    line-height: 100px;
+    font-family: Cambria;
+    text-decoration-line: none;
+    color: #363636;
+    font-size: 1.1em;
     width: 33.33%;
-    height: 100px;
+    height: 40px;
     text-align: center;
 
 }
 
-li a:hover {
+li a:hover, a:visited{
   background-color: black;
   color: white;
+}
+div.content{
+    padding-top: 140px;
+    min-height: 502px;
+    padding-bottom: 25px;
+}
+
+div.footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 25px;
+    background: -moz-linear-gradient(top, #eeeeee 0%, #000000 100%);
+    background: -webkit-linear-gradient(top, #eeeeee 0%, #000000 100%);
+    background: linear-gradient(to bottom, #eeeeee 0%, #000000 100%);    
+    opacity: 0.8;
+    width: 100%;
+    font-family: Cambria;
+    font-size: 0.9em;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
