@@ -70,21 +70,27 @@ div.content{
     padding-bottom: 30px;
 }
 div.y_adopt{
-    background: rgba(255, 87, 115);
     color: #ffffff;
-    width: 33.33%;
-
 }
 div.content h2{
     font-family: Georgia;
     padding-left: 2%;
-    border-bottom: 2px dashed white;
+    border-top: 2px dashed white;
 }
 
-
+ul.h_menu.image li{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    font-family: Cambria;
+    text-decoration-line: none;
+    font-size: 1.1em;
+    text-align: center;
+    width: 25%;
+}
 
 ul.h_menu.image li a:hover{
-    display: absolute;
     content: url(../media/ico/ico-rock.png); /* no need for qoutes */
 }
 
